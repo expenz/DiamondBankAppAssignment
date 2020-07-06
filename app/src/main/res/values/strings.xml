@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DiamondbankAassignment</string>
+    <string name="switch_country"><![CDATA[Switch Country >]]></string>
+    <string name="sign_in"><![CDATA[Sign In >]]></string>
+</resources>

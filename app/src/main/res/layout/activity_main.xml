@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/diamond_backgund__1_"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1.2">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7">
+
+            <ImageView
+                android:id="@+id/diaimage"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="80dp"
+                android:background="@drawable/ic_diabank">
+
+            </ImageView>
+
+            <Button
+                android:id="@+id/msg"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="#00000000"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/ic_baseline_email_24"/>
+
+            <Button
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:text="10"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/not_back"
+                android:layout_marginLeft="45dp"/>
+
+
+            <Button
+                android:id="@+id/help"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:text="Help"
+                android:layout_marginLeft="280dp"
+                android:textColor="@android:color/background_light"
+                android:background="#00000000"
+                android:textAllCaps="false"
+                android:textSize="15dp"/>
+
+            <Button
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="------"
+                android:textAlignment="2"
+                android:textColor="@android:color/background_light"
+                android:background="#00000000"
+                android:drawableTop="@drawable/ic_baseline_cancel_24"
+                android:layout_marginLeft="350dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#00000000"
+            android:layout_weight="1.9">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="251dp"
+                android:layout_marginTop="133dp"
+                android:background="@drawable/ic_nglogo"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="165dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/ic_photo_camera"/>
+
+            <Button
+                android:id="@+id/cam"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginBottom="9dp"
+                android:background="@drawable/btn_background"
+                android:layout_centerHorizontal="true"/>
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/cam"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btn_background"
+                android:text="Switch Country          >"
+                android:textAllCaps="false"
+                android:textSize="17dp"
+                android:textColor="@android:color/background_light"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#00FF8800"
+            android:layout_weight="0.8">
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:text="@string/sign_in"
+                android:textAllCaps="false"
+                android:textSize="17dp"
+                android:textColor="@android:color/background_light"
+                android:background="@drawable/btn_background"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@drawable/dia_logo"
+        android:backgroundTint="#80FFFFFF"
+        android:backgroundTintMode="src_atop"
+        android:layout_weight="1.3">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/register"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:background="#006200EE"
+                android:textColor="@android:color/black"
+                android:drawableTop="@drawable/ic_register"/>
+
+            <Button
+                android:id="@+id/foglogdet"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_toEndOf="@id/register"
+                android:text="Forgot Login Details"
+                android:textAllCaps="false"
+                android:layout_marginTop="7dp"
+                android:background="#006200EE"
+                android:textColor="@android:color/black"
+                android:drawableTop="@drawable/ic_lock_button"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/quiktr"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:background="#006200EE"
+                android:text="Quick Transfer"
+                android:textAllCaps="false"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/black"
+                android:drawableTop="@drawable/ic_transfer"/>
+
+            <Button
+                android:id="@+id/changedev"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_toEndOf="@id/quiktr"
+                android:text="Changed Device?"
+                android:textAllCaps="false"
+                android:layout_marginTop="-3dp"
+                android:background="#006200EE"
+                android:textColor="@android:color/black"
+                android:drawableTop="@drawable/ic_smartphone"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/Quibilpy"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:text="Quick Bill Payment"
+                android:textAllCaps="false"
+                android:background="#006200EE"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/black"
+                android:drawableTop="@drawable/ic_money"/>
+
+            <Button
+                android:id="@+id/openacc"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_toEndOf="@id/Quibilpy"
+                android:text="Open an Account"
+                android:textAllCaps="false"
+                android:background="#006200EE"
+                android:textColor="@android:color/black"
+                android:drawableTop="@drawable/ic_add"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/Quickloans"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:text="Quick Loans"
+                android:background="#006200EE"
+                android:textAllCaps="false"
+                android:layout_marginTop="3dp"
+                android:textColor="@android:color/black"
+                android:drawableTop="@drawable/ic_loan_to_value"/>
+
+            <Button
+                android:id="@+id/interbank"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_toEndOf="@id/Quickloans"
+                android:text="Internet Banking"
+                android:textAllCaps="false"
+                android:background="#006200EE"
+                android:layout_marginTop="2dp"
+                android:textColor="@android:color/black"
+                android:drawableTop="@drawable/ic_laptop"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
